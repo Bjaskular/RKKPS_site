@@ -1,24 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
+import Scales3LineIcon from 'remixicon-react/Scales3LineIcon';
+import MenuLineIcon from 'remixicon-react/MenuLineIcon';
+import CloseLineIcon from 'remixicon-react/CloseLineIcon';
+import ArrowDownSLineIcon from 'remixicon-react/ArrowDownSLineIcon';
+
+import { useState } from "react";
 
 function App() {
+
+  const [isShow, setIsShow] = useState(false);
+
+  const showMenu = event => {
+    setIsShow(isShow => !isShow);
+  }
+
+  const navClasses = isShow ? 'nav__menu show-menu' : 'nav__menu';
+  const toogleClasses = isShow ? 'nav__toggle show-icon' : 'nav__toggle';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header className='header'>
+      <nav className='nav container'>
+        <div className='nav__data'>
+          <a href="#" className="nav__logo">
+            <Scales3LineIcon className="icon__logo"/> Rafał Kowalski
+          </a>
+          <div className={toogleClasses} id="nav-toggle">
+            <MenuLineIcon className="nav__burger" onClick={showMenu}/>
+            <CloseLineIcon className="nav__close" onClick={showMenu}/>
+          </div>
+        </div>
+        <div className={navClasses} id="nav-menu">
+          <ul className="nav__list">
+            <li><a href="#" className="nav__link">Strona domowa</a></li>
+
+            <li><a href="#" className="nav__link">Aktualności</a></li>
+
+            <li className="dropdown__item">
+              <div className="nav__link">
+                Zakres praktyk<ArrowDownSLineIcon className='dropdown__arrow'/> 
+              </div>
+            </li>
+
+            <li><a href="#" className="nav__link">Firmy</a></li>
+
+            <li><a href="#" className="nav__link">Kontakt</a></li>
+
+            <li><a href="#" className="nav__link">O nas</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
   );
 }
 
