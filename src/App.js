@@ -3,6 +3,8 @@ import Scales3LineIcon from 'remixicon-react/Scales3LineIcon';
 import MenuLineIcon from 'remixicon-react/MenuLineIcon';
 import CloseLineIcon from 'remixicon-react/CloseLineIcon';
 import ArrowDownSLineIcon from 'remixicon-react/ArrowDownSLineIcon';
+import User2FillIcon from 'remixicon-react/User2FillIcon';
+import AuctionFillIcon from 'remixicon-react/AuctionFillIcon';
 
 import { useState } from "react";
 
@@ -39,6 +41,19 @@ function App() {
               <div className="nav__link">
                 Zakres praktyk<ArrowDownSLineIcon className='dropdown__arrow'/> 
               </div>
+
+              <ul className="dropdown__menu">
+                <li>
+                  <a href="#" className="dropdown__link">
+                    <User2FillIcon className="dropdown__icon"/> Prawo cywilne
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="dropdown__link">
+                    <AuctionFillIcon className="dropdown__icon"/> Prawo karne
+                  </a>
+                </li>
+              </ul>
             </li>
 
             <li><a href="#" className="nav__link">Firmy</a></li>
