@@ -1,0 +1,41 @@
+.nav__toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+  
+.nav__burger,
+.nav__close {
+    color: var(--white-color);
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+}
+
+.nav__close {
+    opacity: 0;
+}
+
+/* Show icon */
+.show-icon
+.nav__burger {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+.show-icon
+.nav__close {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+@media screen and (min-width: 1118px){
+    .nav__toggle {
+      display: none;
+    }
+}

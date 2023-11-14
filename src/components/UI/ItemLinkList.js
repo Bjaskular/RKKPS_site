@@ -1,4 +1,4 @@
-const ItemLink = (props) => {
+const ItemLinkList = (props) => {
     return (
         <li>
             <a href={props.link} className={props.className}>
@@ -8,4 +8,4 @@ const ItemLink = (props) => {
     ); 
 }
 
-export default ItemLink;
+export default ItemLinkList;
