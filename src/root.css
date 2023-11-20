@@ -1,9 +1,11 @@
 :root {
     --header-height: 3.5rem;
-  
+    --main-height: calc(100vh - var(--header-height));
     --black-color: hsl(200, 24%, 12%);
     --black-color-light: hsl(220, 24%, 15%);
     --black-color-lighten: hsl(220, 20%, 18%);
+    --royalblue-color: #4169e1;
+    --royalblue-color-dark: #2047c0;
     --white-color: #fff;
     --body-color: hsl(220, 100%, 97%);
   
@@ -15,10 +17,10 @@
   
     --z-tooltip: 10;
     --z-fixed: 100;
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
   }
-  
-  @media screen and (min-width: 1024px) {
-    :root {
-      --normal-font-size: 1rem;
-    }
-  }
+}

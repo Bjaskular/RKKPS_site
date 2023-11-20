@@ -105,6 +105,7 @@
   
     .nav__link:hover {
       background-color: transparent;
+      color: #919191;
     }
   
     .dropdown__item {

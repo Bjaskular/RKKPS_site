@@ -1,0 +1,218 @@
+main {
+    display: flex;
+    width: 100%;
+    background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/7b6b86c717445642acc88705/young-successful-businessman-correcting-tie.jpg");
+    background-size: 120% 125%;
+    background-repeat: no-repeat;
+    height: var(--main-height);
+    margin-top: var(--header-height);
+}
+
+.welcome {
+    margin: 0 15%;
+    color: white;
+}
+
+.welcome__title {
+    color:  var(--royalblue-color);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-size: 4rem
+}
+
+.welcome__description {
+    line-height: 2rem;
+    padding-right: 30vw;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.welcome > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--black-color-light);
+    background-color: var(--royalblue-color);
+    height: 3rem;
+    width: 15rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.welcome > a:hover {
+    background-color: var(--royalblue-color-dark);
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1118px) {
+    main {
+        height: calc(var(--main-height) - 2rem);
+        background-position-x: 0vw;
+        background-size: 125vw 100vh;
+    }
+
+    .welcome {
+        margin: 1rem 5rem;
+    }
+    
+    .welcome__title {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        font-size: 3rem;
+    }
+    
+    .welcome__description {
+        font-size: 1.3rem;
+        padding-right: 25vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        height: auto;
+        padding-bottom: 1rem;
+        background-position-x: 0%;
+        background-size: 130% 165%;
+    }
+
+    .welcome {
+        margin: 0 3rem;
+    }
+    
+    .welcome__title {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        font-size: 2.3rem
+    }
+    
+    .welcome__description {
+        line-height: 1.5rem;
+        padding-right: 25vw;
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        height: calc(var(--main-height) - 25rem);
+        padding-bottom: 0.5rem;
+        background-position-x: 35%;
+        background-size: 195% 115%
+    }
+
+    .welcome {
+        margin: 0 2rem;
+    }
+
+    .welcome__title {
+        padding-top: 2rem;
+        padding-bottom: 0;
+        font-size: 1.7rem;
+    }
+
+    .welcome__description {
+        line-height: 1.4rem;
+        padding-right: 20vw;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .welcome > a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-aspect-ratio: 2/1) {
+    main {
+        height: auto;
+        background-size: 115% 160%;
+    }
+
+    .welcome {
+        margin: 1rem 3rem;
+    }
+    
+    .welcome__title {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2.8rem
+    }
+    
+    .welcome__description {
+        line-height: 1.5rem;
+        font-size: 1rem;
+        padding-right: 35vw;
+    }
+}
+
+@media (min-aspect-ratio: 2.3/1) {
+    main {
+        height: auto;
+        background-size: 125% 150%;
+    }
+
+    .welcome {
+        margin: 1rem 3rem;
+    }
+    
+    .welcome__title {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+    
+    .welcome__description {
+        line-height: 1.5rem;
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-aspect-ratio: 3/4) {
+    main {
+        height: auto;
+        background-position-x: 10%;
+        background-size: 150% 115%;
+    }
+}
+
+@media (max-aspect-ratio: 1/2) {
+    main {
+        height: auto;
+        background-position-x: 0%;
+        background-size: 140% 100%;
+    }
+
+    .welcome {
+        margin: 0.5rem 1.5rem;
+    }
+    
+    .welcome__title {
+        padding-top: 1rem;
+        padding-bottom: 0;
+        font-size: 1.5rem;
+        width: 80vw;
+    }
+
+    .welcome__description {
+        line-height: 1.1rem;
+        font-size: 0.8rem;
+    }
+
+    .welcome > a {
+        font-size: 0.8rem;
+        height: 2.5rem;
+        width: 12rem;
+    }
+
+    .welcome > a:hover {
+        font-size: 1rem;
+    }
+}
